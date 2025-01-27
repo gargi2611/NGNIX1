@@ -32,27 +32,6 @@ sudo nano /etc/nginx/sites-available/default
 add code to the config file
 
 ```bash
-server {
-    listen 8081 default_server;
-    listen [::]:8081 default_server;
-
-    root /var/www/html/test;  # Updated directory path  #root /home/root/test;
-
-    index index.html index.htm index.nginx-debian.html;
-
-    server_name _;
-
-    location / {
-        try_files $uri $uri/ =404;
-    }
-
-    # Serve videos from the /videos/ URL
-    location /videos/ {
-        alias /var/www/html/test/;  # Updated directory path
-    }
-}" show error even the format is correct
-
-
 # Existing Codecolor Website Configuration
 server {
     listen 80;
@@ -108,7 +87,10 @@ for permission
 
 chmod 644 /path/to/remote/file.mp4
 ```
-
+```bash
+sudo nginx -t
+sudo systemctl reload nginx
+```
 
 use to restart ngnix
 
