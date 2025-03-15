@@ -19,7 +19,7 @@ video directory folder
 always use this command before the login to add the videos to the remote machine (VPS or VPC) 
 
 ```bash
- scp "F:/Paarsh Infotech/learn-main/learn-main/chatgpt.mp4"
+ scp "C:\Users\DELL\Downloads\cloud_ppt.mp4" root@89.116.34.84:/root/PaarshEdu/uploads
 ```
 
 re login
