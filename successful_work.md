@@ -124,8 +124,8 @@ check for the videos are visible in the directory or not
 ```bash
 
 ```
-
+path of ssl certificates
 
 ```bash
-
+/etc/letsencrypt/live/api.codecolor.online/fullchain.pem; 
 ```
